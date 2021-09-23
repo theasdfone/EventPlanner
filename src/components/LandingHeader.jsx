@@ -1,7 +1,7 @@
 import React from "react";
-import {BrowserRouter, Route, Switch, Link} from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
-function LandingHeader(){
+function LandingHeader() {
     return (
         <header className="header">
             <div className="header-content">

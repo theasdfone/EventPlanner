@@ -8,12 +8,10 @@ import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 function LandingPage() {
     return (
-        <div class="body">
+        <div>
             <LandingHeader />
-            <div class="wrap">
-                <div class="eventVideo"><h1 style={{ paddingTop: "200px" }}>Welcome to your Event Planner!</h1></div>
-                <Link to="/register"><Button class="btnLogin" variant="contained">Get Started</Button></Link>
-            </div>
+            <div class="eventVideo"><h1 style={{ paddingTop: "200px" }}>Welcome to your Event Planner!</h1></div>
+            <Link to="/register"><Button class="btnRegister" variant="contained">Get Started</Button></Link>
             <Footer />
         </div>
 
