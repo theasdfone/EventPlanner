@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* This is the Header */
+
+.header{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    width: 80%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.logo-area{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-area h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.title{
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: white; 
+   }
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    height: 100%;    
+    font-size: 16px;
+}
+
+/* This is the end of the Header */
+
+/* This is the start of the Footer */
+  /* Footer */
+
+footer {
+    background: #000;
+    color: #fcfcfc;
+    font-family: "Roboto", sans-serif;
+    padding: 36px;
+  }
+  
+  footer a {
+    color: #fcfcfc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .footer-container {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-top: 16px;
+    padding-left: 10px;
+  }
+  
+  footer ul li {
+    margin: 12px 8px;
+  }
+  
+  footer .footer-left {
+    padding-right: 100px;
+    border-right: 1px solid #c4c4c4;
+  }
+  
+  footer .footer-right {
+    padding-left: 100px;
+  }
+  
+  footer .social-icons {
+    margin-top: 16px;
+  }
+  
+  footer .social-icons a {
+    text-decoration: none;
+  }
+  
+  footer .social-icons img {
+    margin: 0 16px;
+  }
+  
+  footer .social-icons img:first-child {
+    margin-left: 0;
+  }
+  
+  footer .footer-right p {
+    margin-top: 32px;
+  }
+/* This is the end of the Footer */
+
+/* This is the Base Template for the Login + Registration + Forgot Password */
+
+
+.main-div{
+    margin: 100px auto;
+    width: 350px;
+    background-color: black;
+    padding: 60px;
+}
+
+.title, .subtitle{
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.subtitle{
+    font-size: 18px;
+}
+
+.main-form{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-div{
+    display: block;
+    border-radius: 30px;
+    border: 1px solid rgba(0,0,0, 0.2);
+    padding: 10px;
+    margin: 10px, 0px;
+}
+
+.main-form input{
+    font-size: 18px;
+    padding: 10px 0px 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-indent: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+.forgot-password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+    margin-bottom: 30px;
+}
+
+.forgot-password a{
+    margin-left: 15px;
+}
+
+.signup{
+    text-align: center;
+}
+
+.signup p{
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* This is the END of the Base Template for the Login + Registration + Forgot Password */
