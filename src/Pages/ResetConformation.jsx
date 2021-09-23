@@ -9,7 +9,7 @@ function ResetConformation(){
     return(
         <div>
             <Header/>
-            <div className="main-div">
+            <div className="main-div" style={{marginBottom: "250px"}}>
                 <Form 
                     subtitle="If you entered a valid email you should recieve instructions to reset your password"
                 />

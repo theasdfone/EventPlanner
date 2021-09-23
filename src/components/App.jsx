@@ -11,6 +11,9 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ForgotPassword from "../Pages/ForgotPassword";
 import ResetConformation from "../Pages/ResetConformation";
+import AboutPage from "../Pages/AboutPage";
+import Contact from "../Pages/Contact";
+
 
 
 function App(){
@@ -27,6 +30,8 @@ function App(){
                     <Route path="/register" component={Register}/>
                     <Route path="/forgotpassword" component={ForgotPassword}/>
                     <Route path="/reset-conformation" component={ResetConformation}/>
+                    <Route path="/about" component={AboutPage}/>
+                    <Route path="/contact" component={Contact}/>
                 </Switch>
             
         </BrowserRouter>
