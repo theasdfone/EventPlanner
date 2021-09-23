@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 import Form from "../components/Form";
 import Inputs from "../components/Inputs";
-import Button from "../components/Button";
 import Clickables from "../components/Clickables";
+import {Button} from '@material-ui/core'
 
 function Login(){
     return(
@@ -32,9 +32,7 @@ function Login(){
                 text="Forgot Password?"
             />
 
-            <Button 
-                name = "Login"
-            />
+            <Button class="btn" variant="contained">Login</Button>
 
 
             <Clickables 

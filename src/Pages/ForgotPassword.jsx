@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 import Form from "../components/Form";
 import Inputs from "../components/Inputs";
-import Button from "../components/Button";
+import {Button} from '@material-ui/core'
 
 function ForgotPassword(){
     return(
@@ -22,7 +22,7 @@ function ForgotPassword(){
                     />
                 </form>
 
-                <Link to="/reset-conformation"><Button name = "Reset" /></Link>
+                <Link to="/reset-conformation"><Button class="btn" variant="contained">Reset</Button></Link>
             
             </div>
             <Footer/>

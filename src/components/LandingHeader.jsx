@@ -12,7 +12,7 @@ function LandingHeader(){
 
 
                 <ul className="navigation">
-                    <Link to="/login"><li>Get Started</li></Link>
+                    <Link to="/login"><li>Login</li></Link>
                 </ul>
             </div>
         </header>

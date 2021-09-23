@@ -68,12 +68,22 @@ a:link, a:visited {
     font-size: 16px;
 }
 
-/* This is the end of the Header */
+.body {
+  position: relative;
+  min-height: 100vh;
+}
 
-/* This is the start of the Footer */
-  /* Footer */
+.body wrap{
+  padding-bottom: 100px;
+}
 
 footer {
+    position:absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height:200px;
+    width:100%;
     background: #000;
     color: #fcfcfc;
     font-family: "Roboto", sans-serif;
@@ -91,7 +101,7 @@ footer {
   
   footer .footer-container {
     display: flex;
-    width: 900px;
+    width: 1750px;
     margin: 0 auto;
   }
   
@@ -106,7 +116,7 @@ footer {
   }
   
   footer .footer-left {
-    padding-right: 100px;
+    padding-right: 150px;
     border-right: 1px solid #c4c4c4;
   }
   
@@ -193,6 +203,17 @@ footer {
     margin-bottom: 10px;
 }
 
+.btnLogin{
+    margin-top: 10px;
+    margin-left: 45%;
+    width: 200px;
+    padding: 12px 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #F87575;
+    margin-bottom: 10px;
+}
+
 .forgot-password{
     display: flex;
     flex-direction: row;
@@ -214,4 +235,13 @@ footer {
     margin-bottom: 5px;
 }
 
+
+.eventVideo{
+  height: 500px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  background: #aaa;
+  text-align: center;
+}
 /* This is the END of the Base Template for the Login + Registration + Forgot Password */

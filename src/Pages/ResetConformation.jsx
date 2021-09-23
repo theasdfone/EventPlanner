@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 import Form from "../components/Form";
-import Button from "../components/Button";
+import {Button} from '@material-ui/core'
 
 function ResetConformation(){
     return(
@@ -13,7 +13,7 @@ function ResetConformation(){
                 <Form 
                     subtitle="If you entered a valid email you should recieve instructions to reset your password"
                 />
-                <Link to="/login"><Button name = "Back to Login"/></Link>
+                <Link to="/login"><Button class="btn" variant="contained">Back to Login</Button></Link>
             </div>
             <Footer/>
         </div>

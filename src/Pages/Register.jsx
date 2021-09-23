@@ -4,8 +4,7 @@ import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 import Form from "../components/Form";
 import Inputs from "../components/Inputs";
-import Button from "../components/Button";
-
+import {Button} from '@material-ui/core'
 
 function Register(){
     return(
@@ -34,9 +33,7 @@ function Register(){
                 />
             </form>
 
-            <Button 
-                name = "Register"
-            />
+            <Button class="btn" variant="contained">Register</Button>
 
             </div>
             <Footer/>
