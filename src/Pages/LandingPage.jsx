@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LandingHeader from "../components/LandingHeader";
-import { Container } from "@material-ui/core";
 import { Button } from '@material-ui/core'
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
