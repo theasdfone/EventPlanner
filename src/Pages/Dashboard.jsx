@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
-import { IconButton } from '@material-ui/core'
-import ToDo from '../components/dashboard-components/ToDo';
-import OtherCal from '../components/dashboard-components/OtherCal';
+import Settings from "../components/Settings";
+// import ToDo from '../components/dashboard-components/ToDo';
+// import OtherCal from '../components/dashboard-components/OtherCal';
 import Footer from "../components/Footer"
 
-const Dashboard = () => {
+function Dashboard(){
     return(
         <div>
             <header className="header">
@@ -16,13 +15,12 @@ const Dashboard = () => {
                     </div>
 
                     <ul className="navigation">
-                        <Link to="/settings"><li>Settings</li></Link>
+=                        <Settings/>
                     </ul>
                 </div>
             </header>
-            <WCalendar/>
-            <ToDo/>
-            <OtherCal/>
+            {/* <ToDo/> */}
+            {/* <OtherCal/> */}
             <Footer/>
 
 
@@ -31,7 +29,7 @@ const Dashboard = () => {
             {/* To do checklist */}
             {/* Different Calendar Swapping Options */}
         </div>
-    )
+    );
 }
 
 export default Dashboard

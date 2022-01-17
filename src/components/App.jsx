@@ -13,6 +13,7 @@ import ForgotPassword from "../Pages/ForgotPassword";
 import ResetConformation from "../Pages/ResetConformation";
 import AboutPage from "../Pages/AboutPage";
 import Contact from "../Pages/Contact";
+import Dashboard from "../Pages/Dashboard";
 
 
 
@@ -32,6 +33,7 @@ function App(){
                     <Route path="/reset-conformation" component={ResetConformation}/>
                     <Route path="/about" component={AboutPage}/>
                     <Route path="/contact" component={Contact}/>
+                    <Route path="/dashboard" component={Dashboard}/>
                 </Switch>
             
         </BrowserRouter>
