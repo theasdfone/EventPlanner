@@ -32,7 +32,6 @@ function App() {
     // 2. creating state over here. setEmail and setPassword are functions passed to the Form.js
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [phone, setPhone] = useState('');
 
     //8. This will allow us to navigate the user to another page and we have moved <Router><Router/> to index because these 2 don't get along well
     let navigate = useNavigate();
@@ -61,8 +60,9 @@ function App() {
         }
         if (id === 2) {
           // 7. Here we create a user and renavigate them to the home screen
-          createUserWithEmailAndPassword(authentication, email, password, phone)
+          createUserWithEmailAndPassword(authentication, email, password)
             .then((response) => {
+              console.log("Success")
               navigate('/home')
               sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
             })
@@ -113,7 +113,6 @@ function App() {
                     title="Register"
                     setEmail={setEmail}
                     setPassword={setPassword}
-                    setPhone={setPhone}
                     handleAction={() => handleAction(2)}
                     />}
                 />

@@ -13,28 +13,7 @@ import Inputs from "../Inputs";
 // import styles from './form.css';
 import Footer from '../Footer';
 
-const useStyles = makeStyles(() => ({
-    field: {
-        marginBottom : '10px',
-    },
-
-    // btn: {
-    //     marginTop: "10px",
-    //     marginLeft: "5px",
-    //     width: "100%",
-    //     padding: "12px 10px",
-    //     border: "3px solid black",
-    //     fontSize: "18px",
-    //     borderRadius: "30px",
-    //     backgroundColor: "white",
-    //     marginBottom: "10px",
-
-    //   }
-  }));
-
-export default function BasicTextFields({ title, setPassword, setEmail, setPhone, handleAction }) {
-
-    const classes = useStyles();
+export default function BasicTextFields({ title, setPassword, setEmail, handleAction }) {
 
     return (
         <div>
@@ -44,8 +23,19 @@ export default function BasicTextFields({ title, setPassword, setEmail, setPhone
                   subtitle= {`Please ${title} to continue`}
                 />
                 <form className="main-form">
-                <div className={classes.field}>
-                    <TextField
+                    <Inputs
+                        iType="text"
+                        pHolder="Username"
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <Inputs
+                        iType="password"
+                        pHolder="Password"
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+
+                    {/* This block you can kinda ignore */}
+                    {/* <TextField
                         id="email"
                         label="Enter an Email"
                         variant="outlined"
@@ -53,34 +43,16 @@ export default function BasicTextFields({ title, setPassword, setEmail, setPhone
                         color="primary"
                         fullWidth
                     />
-                </div>
-                <div>
-                    <div className={classes.field}>
-                        <TextField
-                        id="password"
-                        label="Enter a Password"
-                        variant="outlined"
-                        onChange={(e) => setPassword(e.target.value)}
-                        color="primary"
-                        fullWidth
-                        />
-                    </div>
-                </div>
-                {
-                    title === "register" ?
+
                     <TextField
-                    id="phone"
-                    label="Enter a Phone Number"
+                    id="password"
+                    label="Enter a Password"
                     variant="outlined"
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     color="primary"
                     fullWidth
-                    /> :
-                    null
-                }
-
-
-            </form>
+                    /> */}
+                </form>
                 <SubmitButton
                     colorInherit
                     title={title}

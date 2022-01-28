@@ -148,16 +148,15 @@ footer .footer-right p {
 /* This is the Base Template for the Login + Registration + Forgot Password */
 
 .main-div {
-  margin: 100px auto 120px;
-  width: 400px;
-  background-color: white;
-  padding: 40px;
-  border: 3px solid black;
+  margin: 100px auto 175px;
+  width: 350px;
+  background-color: black;
+  padding: 60px;
 }
 
 .title, .subtitle {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .title {
@@ -171,8 +170,7 @@ footer .footer-right p {
 
 .main-form {
   width: 100%;
-  margin-top: 20px;
-  /* margin-bottom: 20px; */
+  margin-top: 30px;
 }
 
 .input-div {
@@ -190,7 +188,6 @@ footer .footer-right p {
   outline: none;
   border-radius: 20px;
   text-indent: 10px;
-  margin: 5px
 }
 
 .btn {
@@ -198,12 +195,11 @@ footer .footer-right p {
   margin-left: 5px;
   width: 100%;
   padding: 12px 10px;
-  border: 3px solid black;
+  border: none;
   font-size: 18px;
   border-radius: 30px;
-  background-color: white;
+  background-color: grey;
   margin-bottom: 10px;
-
 }
 
 .btnRegister {
