@@ -34,7 +34,7 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
                         onChange={(e) => setPassword(e.target.value)}
                     />
 
-                    {/* This block you can kinda ignore */}
+                    {/* This block you can kinda ignore and not too much of a deal */}
                     {/* <TextField
                         id="email"
                         label="Enter an Email"
