@@ -11,8 +11,8 @@ function ForgotPassword(){
         <div>
             <Header />
             <div className="main-div">
-            
-                <Form 
+
+                <Form
                     subtitle="Enter your email below to reset your password"
                 />
                 <form className="main-form">
@@ -23,7 +23,7 @@ function ForgotPassword(){
                 </form>
 
                 <Link to="/reset-conformation"><Button class="btn" variant="contained">Reset</Button></Link>
-            
+
             </div>
             <Footer/>
         </div>
